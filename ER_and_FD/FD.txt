@@ -1,0 +1,37 @@
+D(studentIdnr, studentName, login, branchName, programName, courseCode, courseName, credits, departmentName, capacity, classification, grade, position)
+studentIdnr → studentName
+studentIdnr → studentLogin
+studentIdnr → classificationName
+studentIdnr → branchName
+login → studentIdnr
+ 
+        courseCode → courseName
+        courseCode → credits
+        courseCode → capacity
+courseCode → departmentName
+studentIdnr, courseCode → grade
+studentIdnr, courseCode → position
+courseCode, position → studentIdnr
+ 
+b) D(studentIdnr, studentName, login, branchName, programName, courseCode, courseName, credits, departmentName, capacity, classification, grade, position)  
+R1(X+) och R2(X U (D-X+))
+    
+    decomposing on studentIdnr then:
+    (UNIQUE)
+    R1(X+) = R1(studentIdnr, studentName, login, programName, branchName) 
+
+    R2(X U (D-X+)) = R2(studentIdnr, courseCode, classification)  
+
+    decomposing on courseCode then: 
+    R3(courseCode, studentIdnr, position,grade) (UNIQUE)
+    R4(courseCode, courseName, credits, departmentName, capacity)
+        
+        
+c) In R2: MVD             courseCode →> classification
+R2 (studentIdnr, courseCode, classification)
+R21 (courseCode, classification)
+R22 (studentIdnr, courseCode)
+ 
+ 
+
+
