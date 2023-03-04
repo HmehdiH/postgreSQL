@@ -1,6 +1,6 @@
 # Creating a data base which stores the students information: 
  
- <b> This project was a lab given by Chalmers University of Technology, 2022:</b> 
+ <b> This project was a lab given by the Chalmers University of Technology, 2022:</b> 
   <b>"</b>Introduction
 In this assignment you will design and construct a database, together with a front end application, that handles university students and courses. You will do this in four distinct tasks:
 
